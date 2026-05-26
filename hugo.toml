@@ -1,0 +1,110 @@
+baseURL = "https://davidlu2025.github.io/"
+languageCode = "zh-cn"
+title = "David Lu"
+theme = "PaperMod"
+paginate = 5
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  author = "David Lu"
+  description = "个人技术博客 · 项目展示 · 代码人生"
+  keywords = ["Blog", "Portfolio", "Tech", "Developer"]
+
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  defaultTheme = "auto"   # auto / light / dark
+
+  [params.assets]
+    favicon        = "/favicon.ico"
+    favicon16x16   = "/favicon-16x16.png"
+    favicon32x32   = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.label]
+    text = "David Lu"
+    icon = "/favicon.ico"
+    iconHeight = 22
+
+  [params.homeInfoParams]
+    Title   = "Hi，我是 David Lu 👋"
+    Content = """
+欢迎来到我的个人网站！\n
+我是一名软件开发者，热衷于探索新技术、构建开源项目。\n
+这里是我记录学习历程、分享技术思考、展示个人项目的地方。\n
+**随便逛逛 →** [博客文章](/posts) · [我的项目](/projects) · [关于我](/about)"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/davidlu2025"
+
+  [[params.socialIcons]]
+    name = "email"
+    url  = "mailto:davidluwin7@gmail.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url  = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "📝 博客"
+    url        = "/posts/"
+    weight     = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name       = "🚀 项目"
+    url        = "/projects/"
+    weight     = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "👤 关于"
+    url        = "/about/"
+    weight     = 30
+
+  [[menu.main]]
+    identifier = "tags"
+    name       = "🏷️ 标签"
+    url        = "/tags/"
+    weight     = 40
+
+  [[menu.main]]
+    identifier = "search"
+    name       = "🔍"
+    url        = "/search/"
+    weight     = 50
+
+[taxonomies]
+  category = "categories"
+  tag      = "tags"
+  series   = "series"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
+
+# 搜索需要输出 JSON
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

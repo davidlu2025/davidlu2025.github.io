@@ -1,0 +1,51 @@
+/* ============================================================
+   David Lu's Blog — 自定义样式
+   ============================================================ */
+
+/* 首页欢迎卡片 */
+.home-info-wrapper {
+  border-left: 4px solid var(--primary);
+  padding-left: 1.2rem;
+}
+
+/* 代码块增强 */
+.post-content pre {
+  border-radius: 8px;
+}
+
+/* 项目列表卡片样式 */
+.post-entry {
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 标签样式美化 */
+.post-tags a {
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+}
+
+/* 表格美化 */
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.post-content th {
+  background: var(--code-bg);
+  font-weight: 600;
+}
